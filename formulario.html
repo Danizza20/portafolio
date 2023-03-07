@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <fore action="" method="post" enctype="text/plain">
+    <fieldset>
+        <legend>Datos del usuario</legend>
+        <label for="usuario">
+            Nombre de usuario:
+        </label>  
+        <input type="text" placeholder="Usuario" maxlength="12" name="usuario" id="usuario" /><br/>
+        <laber for="">Nombre</laber><br/>
+        <input type="text" name="nombre" id="nombre" maxlength="25"><br/> <!--No pueden haber dos id con el mismo nombre en el formulario-->
+        
+        <laber for="">Apellido paterno</laber><br/>
+        <input type="text" name="ap" id="nombre" maxlength="25"><br/>
+        
+        <laber for="">Apellido materno</laber><br/>
+        <input type="text" name="am" id="nombre" maxlength="25"><br/>
+
+        <label for="">Contraseña:</label><br/>
+        <input type="password" name="pass" id="pass" placeholder="" required/><br/>
+
+        <label for="comenta">Comentarios</label><br/>
+        <textarea name="comenta" id="comenta" cols="25" rows="10"></textarea><br/> <!--Cols es para indicar el número de columnas, y rows para el número de filas-->
+
+        <label for="">E-mail</label><br/>
+        <input type="email" name="correo" id="correo"/><br/>
+
+        <label for="fechan">Fecha de nacimiento:</label><br/>
+        <input type="date" name="fechan" id="fechan"><br/>
+
+        <label for="colores">Selecciona un color:</label><br/>
+        <input type="color" name="colores" id="colores"/><br/>
+
+        <label for="">Mes de registro:</label><br/>
+        <input type="month" name="mes" id="mes"/><br/>
+
+        <label for="semana">Semana:</label><br/>
+        <input type="week" name="semana" id="semana" required/><br/>
+
+        <label for="fechahora">Fecha y hora:</label><br/>
+        <input type="datetime-local" name="fechahora" id="fechahora"/><br/>
+
+        <label for="archivo">Adjuntar archivo:</label><br/>
+        <input type="file" name="archivo" id="archivo"/><br/>
+
+        <label for="pagina">Dirección url:</label><br/>
+        <input type="url" name="pagina" id="pagina"/><br/>
+
+        <label for="cantidad">Cantidad a comprar:</label><br/>
+        <input type="number" name="cantidad" id="cantidad"/><br/>
+
+        <label for="califica">Califica el producto:</label><br/>
+        <input type="range" name="califica" id="califica" min="1" max="10" value="7"/><br/>
+
+        <h3>Indica tus formas de pago preferidas</h3>
+        <input type="checkbox" name="tarjeta" id="tarjeta" value="tarjeta"/>
+        <label for="tarjeta">Tarjeta de credito</label><br/>
+
+        <input type="checkbox" name="tarjetad" id="tarjetad" value="tarjetad" checked>
+        <label for="tarjetad">Tarjeta de débito</label><br/>
+
+        <input type="checkbox" name="transfer" id="transfer" value="transfer">
+        <label for="transfer">Transferencia</label><br/>
+
+        <h3>Indica tu género</h3>
+        <input type="radio" name="genero" id="genero"/>
+        <label for="genero">Femenino</label><br/>
+
+        <input type="radio" name="genero" id="genero"/>
+        <label for="genero">Masculino</label><br/>
+
+        <h3>Categoría de producto a buscar</h3>
+        <select size="7" multiple> <!--Indica cuantos elementos se mostrarán o están disponibles-->
+            <optgroup label="Alimentos"> <!--Agrupar un grupo-->
+                <option>Lácteos</option>
+                <option>Refrigerados</option> <!--Si quiero que este seleccionado un producto, se usa la etiqueta "selected"-->
+                <option>Carnes</option>
+                <option>Carnes frías</option>
+                <option>Frutas / Verduras</option>
+            </optgroup>
+            <optgroup label="Cuidado personal"> <!--Etiquetar una lista-->
+                <option>Higiene personal</option>
+                <option>Belleza</option>
+            </optgroup>
+            <optgroup label="Hogar">
+                <option>Productos de limpieza</option>
+                <option>Jardinería</option>
+             </optgroup>
+        </select><br/>
+        <input type="submit"/>
+    </fieldset>
+    </fore>
+</body>
+</html>
