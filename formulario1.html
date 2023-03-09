@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body background="imagen-purpura-pastel-nube-brillo.jpg" 
+style="background-repeat: no-repeat; background-size: 150%; background-attachment: fixed;"></body>
+    <fore action="" method="post" enctype="text/plain">
+         <!--width es para separar los datos por pixeles-->
+            <style> 
+                table,th,td{ 
+                    align-items: center;
+               }
+               </style>
+
+               <h1 align="center">Tienda de ropa online</h1>
+              
+               <fieldset>
+                <legend>Información del cliente</legend>
+              <table>
+                <tr>
+                    <td><laber for="nombre">Nombre:</laber><br/>
+                    <input type="text" placeholder="Nombre" maxlength="12" name="nombre" id="nombre"/><br/></td>
+
+                    <td><laber for="paterno">Apellido paterno:</laber><br/>
+                    <input type="text" placeholder="Apellido paterno" maxlength="12" name="paterno" id="paterno"/><br/></td>
+
+                    <td><laber for="materno">Apellido materno:</laber><br/>
+                    <input type="text" placeholder="Apellido materno" maxlength="12" name="materno" id="materno"/><br/></td>
+                </tr>
+                <tr>
+                    <td><label for="usuario">Nombre de usuario:</label><br/>
+                    <input type="text" placeholder="Usuario" maxlength="12" name="usuario" id="usuario"/><br/></td>
+
+                    <td><label for="password">Contraseña:</label><br/>
+                    <input type="text" placeholder="Password" maxlength="12" name="password" id="password"/><br/></td>
+
+                </tr>
+            </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de facturación:</legend>
+              <table>
+                <tr>
+                    <td><laber for="calle">Calle:</laber><br/>
+                    <input type="text" placeholder="Usuario" maxlength="12" name="calle" id="calle"/><br/></td>
+
+                    <td><laber for="numero">Num:</laber><br/>
+                    <input type="text" placeholder="Num Exterior" maxlength="12" name="numero" id="numero"/><br/></td>
+
+                    <td><laber for="col">Colonia:</laber><br/>
+                    <input type="text" placeholder="Colonia" maxlength="12" name="col" id="col"/><br/></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">E-mail:</label><br/>
+                    <input type="text" placeholder="E-mail" maxlength="12" name="mail" id="mail"/><br/></td>
+
+                    <td><label for="codigo">Código Postal:</label><br/>
+                    <input type="text" placeholder="C.P" maxlength="12" name="codigo" id="codigo"/><br/></td>
+
+                    <td><label for="rfc">RFC:</label><br/>
+                    <input type="text" placeholder="RFC" maxlength="12" name="rfc" id="rfc"/><br/></td>
+                </tr>
+                <tr>
+                    <td><label for="fechan">Fecha de la venta:</label><br/>
+                        <input type="date" name="fechan" id="fechan"><br/></td>
+                </tr>
+            </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del artículo adquirido:</legend>
+              <table>
+                <tr>
+                    <td><h4 align="center">Tipo</h4>
+                        <select size="5" multiple><br/> 
+                                <option>Vestido</option>
+                                <option>Falda</option> 
+                                <option>Pantalón</option>
+                                <option>Playera</option>
+                                <option>Camisa</option>
+                        </select></td>
+                
+                    <td><h4>Talla</h4>
+                        <input type="checkbox" name="chico" id="chico" value="chico"/>
+                        <label for="chico">Chico</label><br/>
+
+                        <input type="checkbox" name="mediano" id="mediano" value="mediano">
+                        <label for="mediano">Mediano</label><br/>
+
+                        <input type="checkbox" name="grande" id="grande" value="grande">
+                        <label for="grande">Grande</label><br/></td>
+
+                    <td><label for="colores">Selecciona el color:</label><br/>
+                        <input type="color" name="colores" id="colores"/><br/>
+
+                        <input type="submit" name="enviar" id="enviar" value="Enviar datos"/>
+                        <input type="reset" name="borrar" id="borrar" value="Borrar datos"/></td>
+                    </tr>
+            </table>
+            </fieldset>
+            <h3 align="right">©Distribuidora de ropa en línea 2023.</h3>
+    </fore>
+</body>
+</html>
