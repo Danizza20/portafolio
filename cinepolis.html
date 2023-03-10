@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+</head>
+<body background="vecteezy_beautiful-blue-and-yellow-color-gradient-background_5851568.jpg"
+    style="background-repeat: no-repeat; background-size: 100%; background-attachment: fixed;"></body>
+    <h2 align="center"><img src="cinépolis.jpg" width="300" alt="cinepolis"></h2>
+    <fore action="" method="post" enctype="text/plain">
+        
+           <style> 
+               table,th,td{ 
+                   align-items: center;
+              }
+              </style>
+             
+              <fieldset>
+               <legend>Ubicaciones de Cinépolis</legend>
+             <table>
+               <tr>
+                <h2 align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59123.65163573767!2d-101.07574987832031!3d22.1553829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98b5a7e6c007%3A0xe26d37d61bab5285!2sCin%C3%A9polis%20San%20Luis%20Potos%C3%AD%20%22El%20Dorado%22%20(C028)!5e0!3m2!1ses!2smx!4v1678421129445!5m2!1ses!2smx" 
+                    width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h2>
+
+                <td align="center"><laber for="esta">Estado:</laber><br/>
+                    <input type="text" placeholder="Estado" maxlength="12" name="esta" id="esta"/><br/></td>
+
+                <td align="center"><laber for="muni">Municipio:</laber><br/>
+                    <input type="text" placeholder="Municipio" maxlength="12" name="muni" id="muni"/><br/></td>
+
+                <td align="center"><laber for="cine">Cinepolis:</laber><br/>
+                    <input type="text" placeholder="Cinepolis" maxlength="12" name="cine" id="cine"/><br/></td>
+               </tr>
+           </table>
+           </fieldset>
+
+           <fieldset>
+               <legend>Cartelera</legend>
+             <table>
+               <tr>
+                <h2 align="center"><img src="cartelera.jfif" width="500" alt="cinepolis"></h2>
+
+                <td><h4 align="center">Pelicula:</h4>
+                    <select size="4" multiple><br/> 
+                            <option>Scream 6</option>
+                            <option>Creed III</option> 
+                            <option>65: Al Borde de la Extinción</option>
+                            <option>Demon Slayer: To the Swordsmith Village</option>
+                            <option>Ant-Man and The Wasp: Quantumania</option>
+                            <option>Huesera</option>
+                    </select></td>
+
+                    <td align="center"><laber for="idio">Idioma:</laber><br/>
+                        <input type="text" placeholder="Idioma" maxlength="12" name="idio" id="idio"/><br/></td>
+
+                    <td><h4 align="center">Horario:</h4>
+                        <select size="5" multiple><br/>
+                                <option>13:45</option> 
+                                <option>14:00</option> 
+                                <option>15:10</option>
+                                <option>16:35</option>
+                                <option>17:40</option>
+                                <option>18:15</option>
+                                <option>19:05</option>
+                                <option>20:30</option>
+                                <option>21:20</option>
+                                <option>22:10</option>
+                        </select></td>
+
+                   <td align="center"><label for="fechan">Fecha:</label><br/>
+                       <input type="date" name="fechan" id="fechan"><br/></td>
+               </tr>
+           </table>
+           </fieldset>
+
+           <fieldset>
+               <legend>Selecciona tus boletos:</legend>
+             <table>
+               <tr>
+                <h2 align="center"><img src="butacas.jpg" width="500" alt="cinepolis"></h2>
+
+                    <td align="center"><h3>Tipo de boleto</h3>
+                    <input type="checkbox" name="tradi" id="tradi" value="tradi"/>
+                    <label for="tarjeta">Tradicional</label><br/>
+        
+                    <input type="checkbox" name="vip" id="vip" value="vip"/>
+                    <label for="tarjetad">VIP</label><br/></td>
+
+                    <td align="center"><label for="cantidad">Cantidad a comprar:</label><br/>
+                    <input type="number" name="cantidad" id="cantidad"/><br/></td>
+
+                    <td align="center"><h3>Indica tu forma de pago</h3>
+                    <input type="checkbox" name="tarjeta" id="tarjeta" value="tarjeta"/>
+                    <label for="tarjeta">Tarjeta de credito</label><br/>
+
+                    <input type="checkbox" name="tarjetad" id="tarjetad" value="tarjetad"/>
+                    <label for="tarjetad">Tarjeta de débito</label><br/></td>
+                </tr>
+
+                <tr>
+                    <td><h2 align="center"><img src="asientos.jpg" width="500" alt="asientos"></h2></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" name="enviar" id="enviar" value="Enviar datos"/>
+                    <input type="reset" name="borrar" id="borrar" value="Borrar datos"/></td>
+                </tr>
+           </table>
+           </fieldset>
+    
+</body>
+</html>
