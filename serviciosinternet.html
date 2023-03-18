@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Internet y Telefonía</title>
+    <link rel="stylesheet" href="EstiForm.css">
+</head>
+<body background="brilloso.jpg">
+
+    <style>
+
+    </style>
+
+    <h1>Servicios de Internet y Telefonía</h1>
+    <h2>Contrato de servicios</h2>
+
+    <fieldset>
+        <legend>Datos del cliente</legend>
+      <table>
+        <tr>
+            <td><laber for="nombre">Nombre:</laber><br/>
+            <input type="text" placeholder="Nombre" maxlength="12" name="nombre" id="nombre"/><br/></td>
+
+            <td><laber for="paterno">Apellido paterno:</laber><br/>
+            <input type="text" placeholder="Apellido paterno" maxlength="12" name="paterno" id="paterno"/><br/></td>
+
+            <td><laber for="materno">Apellido materno:</laber><br/>
+            <input type="text" placeholder="Apellido materno" maxlength="12" name="materno" id="materno"/><br/></td>
+        </tr>
+        <tr>
+            <table>
+                <tr>
+                    <td><h4>Ciudad</h4>
+                        <select size="5" multiple><br/> 
+                                <option>San Luis Potosí</option>
+                                <option>Matehuala</option> 
+                                <option>Cd. Valles</option>
+                                <option>Queretaro</option>
+                                <option>Guanajuato</option>
+                        </select></td>
+        </tr>
+    </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Servicios a contratar</legend>
+      <table>
+        <tr>
+            <h3>Selecciona el tipo de servicio a contratar</h3>
+                <label for="línea">Línea Telefónica</label>
+                <input type="checkbox" name="línea" id="línea" value="línea" checked><br/>
+
+                <label for="servicio">Servicio de Internet</label>
+                <input type="checkbox" name="servicio" id="servicio" value="servicio" checked><br/>
+        </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Forma de pago</legend>
+        <table>
+            <tr>
+                <h3>Elige la forma de pago</h3>
+                <label for="pago">TDC:</label>
+                <input type="radio" name="pago" id="pago"/><br/>
+
+                <label for="pago">Tarjeta de Débito:</label>
+                <input type="radio" name="pago" id="pago"/><br/>
+
+                <label for="pago">Pago en efectivo:</label>
+                <input type="radio" name="pago" id="pago" checked/><br/>
+
+                <label for="pago">Pago mediante cheque:</label>
+                <input type="radio" name="pago" id="pago"/><br/>
+
+                <label for="pago">Transferencia bancaria:</label>
+                <input type="radio" name="pago" id="pago"/><br/>
+
+                <label for="pago">Depósito bancario:</label>
+                <input type="radio" name="pago" id="pago"/><br/>
+
+                <label for="pago">Pago de Oxxo:</label>
+                <input type="radio" name="pago" id="pago"/><br/>
+
+                <input type="submit" name="enviar" id="enviar" value="Enviar datos"/>
+                <input type="reset" name="borrar" id="borrar" value="Borrar datos"/></br>
+            </tr>
+        </table>
+    </fieldset>
+    
+    <h2 align="center">Práctica 5</h2>
+    <h3 align="center">HTML5 - CSS</h3>
+    <h3 align="center">Primavera 2023</h3>
+
+
+
+
+</body>
+</html>
