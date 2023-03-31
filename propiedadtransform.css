@@ -1,0 +1,79 @@
+#encabezado1{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(132, 155, 233); 
+}
+
+#titulo1{
+    color: rgb(255, 255, 255); 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger; /*Sombra del texto opaca (otra opción)*/
+}
+
+#encabezado2{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(98, 241, 82);
+}
+#encabezado2:hover{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(166, 255, 124);
+    -moz-border-radius: 20px; 
+    -webkit-box-radius: 20px;
+    border-radius: 20px;
+    -moz-transform: skew(5deg,5deg);
+    -webkit-transform: skew(5deg,5deg);
+    transform: skew(5deg,5deg);
+}
+
+#titulo2{
+    color: rgb(80, 74, 74); 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger; /*Sombra del texto opaca (otra opción)*/
+}
+
+#encabezado3{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(255, 172, 47);
+}
+#encabezado3:hover{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center;
+    margin: 15px auto;
+    background: rgb(255, 201, 120);
+    -moz-border-radius: 20px; 
+    -webkit-box-radius: 20px;
+    border-radius: 20px;
+    -moz-transform: skew(5deg,5deg);
+    -webkit-transform: skew(5deg,5deg);
+    transform: skew(5deg,5deg);
+    -moz-box-shadow: rgb(90, 95, 90) 10px 15px ; 
+    -webkit-box-shadow: rgb(90, 95, 90) 10px 15px;
+    box-shadow: rgb(90, 95, 90) 10px 15px; 
+}
+
+#titulo3{
+    color: rgb(59, 56, 56); 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger; /*Sombra del texto opaca (otra opción)*/
+}
