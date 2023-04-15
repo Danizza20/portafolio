@@ -1,0 +1,43 @@
+#encabezado1{
+    display: block;
+    width: 300px; 
+    padding: 1px; 
+    text-align: center; 
+    margin: 15px auto; 
+    background: rgb(255, 255, 255); 
+
+    -moz-border-radius: 20px; 
+    -webkit-box-radius: 20px;
+    border-radius: 20px;
+}
+
+#titulo1{
+    color:rgb(0, 0, 0);
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+div{
+    position: absolute;
+    display: block;
+    width: 400px; 
+    padding: 1px; 
+    text-align: center; 
+    margin: 15px auto; 
+    background: rgb(5, 107, 22); 
+}
+
+span{
+    color:rgb(255, 255, 255); /*Añadir sombra al texto adentro del cuadro*/
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+p{
+    color:rgb(255, 255, 255);
+    text-align: left;
+    font-family: 'Dancing Script', cursive; 
+    font-size: 25px;
+}
+
+
