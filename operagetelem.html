@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones matemáticas</title>
+    <script src="operget.js"></script>
+</head> 
+<body>
+    <h2>Operaciones matemáticas</h2>
+    <form method="post" enctype="text/plain">
+        <label for="numero1">Escribe un numero: </label><br>
+            <input type="text" id="numero1" name="name"><br>
+            <label for="numero2">Escribe un numero: </label><br>
+            <input type="text" id="numero2" name="name2"><br><br>
+            <input type="button" name="Suma" value="Sumar" onclick="suma()">
+            <input type="button" name="Resta" value="Restar" onclick="resta()">
+            <input type="button" name="Multiplica" value="Multiplicar" onclick="multiplicacion()">
+            <input type="button" name="Divide" value="Dividir" onclick="division()">
+    </form>
+    <h2>El resultado es:</h2>
+    <p id="result" name="result"></p>
+</body>
+</html>
