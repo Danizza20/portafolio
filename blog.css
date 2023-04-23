@@ -1,0 +1,69 @@
+#chat{
+    float: left;
+    padding: 20px;
+    border: 10px solid #F48E62;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    }
+
+    #cajadatos{
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 10px solid #F48E62;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    }
+
+    #clave, #texto{
+    width: 200px;
+    }
+
+    #cajadatos > div{
+    padding: 5px;
+    border-bottom: 10px solid #f04bab;
+    }
+    
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid #c0e422;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #c0e422;
+        color: rgb(255, 255, 255);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #ffffff;
+    }
+
+    div{
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    
+
+    p{
+        font-family: 'Abril Fatface', cursive;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+    }
