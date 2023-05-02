@@ -19,9 +19,68 @@ style="background-repeat: no-repeat; background-size: 300%; background-attachmen
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
+    <h3>Menú</h3>
+<nav>
+    <ul>
+        <li>
+            <a href="Connect Salud.html">
+                    Inicio
+            </a>
+        </li>
+        <li>
+            <a href="quienessomos.html">
+                ¿Qué hacemos?
+            </a>
+        </li>
+        <li>
+            <a href="servicios.html">
+                Servicios
+            </a>
+        </li>
+        <li>
+            <a href="contactos.html">
+                    Contactos
+            </a>
+        </li>
+        <li>
+            <a href="blog.html">
+                Blog
+            </a>
+        </li>
+        <li>
+            <a href="regristrarse.html">
+                Regristrarse
+            </a>
+        </li>
+        <li>
+            <a href="galeria.html">
+                Galería
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+<h3>Registro de usuarios</h3>
+
+<div>
+    <form action="blog.php" method="post">
+        <label for="nombre">Nombre de Usuario</label></br>
+        <input type="text" id="nombre" name="nombre" placeholder="User">
+
+        <label for="email">E-mail</label></br>
+        <input type="email" id="email" name="email" placeholder="Email">
+
+        <label for="mensaje">Comentario</label></br>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+        <input type="submit" id="submit" name="submit" value="Enviar formulario">
+    </form>
+</div>
+    
 <p>¿Tiene alguna duda o pregunta?:<br><input type="text" name="clave" id="clave"></p>
 
-<p>Dejanos tus comentarios:<br><textarea name="text" id="texto"></textarea></p>
+<p>Dejanos tus comentarios :D:<br><textarea name="text" id="texto"></textarea></p>
 
 <p><input type="button" name="guardar" id="guardar"
 value="Enviar"></p>
@@ -32,5 +91,6 @@ value="Borrar datos" onclick="elimina()"></p>
 <section id="cajadatos">
 Aún no registras información
 </section>
+
 </body>
 </html>
