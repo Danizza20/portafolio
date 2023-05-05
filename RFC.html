@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generador de RFC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="RFC.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Generador de RFC</h1>
+		<form>
+			<label for="nombre">Nombre:</label></br>
+			<input type="text" id="nombre" required>
+
+			<label for="apellido-paterno">Apellido Paterno:</label>
+			<input type="text" id="apellido-paterno" required>
+
+			<label for="apellido-materno">Apellido Materno:</label>
+			<input type="text" id="apellido-materno" required>
+
+			<label for="fecha-nacimiento">Fecha de nacimiento:</label>
+			<input type="number" id="dia" min="1" max="31" placeholder="Día" required>
+			<input type="number" id="mes" min="1" max="12" placeholder="Mes" required>
+			<input type="number" id="anio" min="1900" max="2099" placeholder="Año" required>
+            
+            <label for="resultado">Resultado:</label>
+            <input type="text" name="resultado" id="resultado">
+
+			<button type="button" onclick="generarRFC()">Generar RFC</button>
+		</form>
+
+		<div id="rfc"></div>
+	</div>
+
+	<script src="RFC.js"></script>
+</body>
+</html>
