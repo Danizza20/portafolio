@@ -1,0 +1,26 @@
+li{
+    font-family: 'Sigmar', cursive;
+    font-size: 20px;
+    color: rgb(52, 129, 17);
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    color: rgb(0, 4, 255);
+    text-align: center;
+}
+
+P{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: rgb(61, 8, 122);
+    text-align: center;
+}

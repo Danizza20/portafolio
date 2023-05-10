@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="Obtener.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<script>
+var total;
+function califica()
+    {var total=0;
+    	for (var x=1;x<=5;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++) /*resul.length es para contar menor a la longitud del radio r=4*/
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value); /*Cuenta si el "res" seleccionado y da el valor*/
+        }
+        total=total+res; /*Conrador para la suma del total*/
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==50) /*Se evaluan los puntos obtenidos*/
+        	document.getElementById("comentario").innerHTML="!!!ERES UN VERDADERO FAN!!!";
+        else
+        	if(total==40)
+        	document.getElementById("comentario").innerHTML="Eres un fan promedio";
+        else
+        	if(total<=40)
+        	document.getElementById("comentario").innerHTML="¿Qué clase de fan eres?";
+    }
+
+ 
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>¿Eres un verdadero fan de Marvel?</h1>
+	<h2>Lo descubrirás luego de hacer este test</h2>
+<form>
+<div>
+	
+	<ul>
+
+		<li>Pregunta 1: ¿QUÉ VILLANO DESINTEGRÓ LA MITAD DEL UNIVERSO CON SOLO CHASQUEAR LOS DEDOS?</li>
+		<!--"value" da un valor a la pregunta para calificar la respuesta correcta-->
+		<input type="radio" name="r1" id="r1" value="0"/>EL DUENDE VERDE<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>VENOM<br/>
+		<input type="radio" name="r1" id="r1" value="10"/>THANOS<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>ULTRON<br/>
+		
+		<li>Pregunta 2: ¿QUIÉN FUE EL PRIMER VENGADOR DE MARVEL?</li>
+		<input type="radio" name="r2" id="r2" value="0"/>HULK<br/>
+		<input type="radio" name="r2" id="r2" value="10"/>CAPITÁN ÁMERICA<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>BLACK WIDOW<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>IRON MAN<br/>
+
+		<li>Pregunta 3: ¿CÚANTAS GEMAS DEL INFINITO HAY?</li>
+		<input type="radio" name="r3" id="r3" value="10"/>6<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>10<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>5<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>9<br/>
+
+        <li>Pregunta 4: ¿QUIÉN ES EL HECHICERO SUPREMO?</li>
+		<input type="radio" name="r4" id="r4" value="0"/>WONG<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>NED<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>LA BRUJA ESCARLATA<br/>
+		<input type="radio" name="r4" id="r4" value="10"/>DOCTOR STEPHEN STRANGE<br/>
+
+		<li>Pregunta 5: ¿CÚAL FUE LA PRIMERA PELÍCULA DE MARVEL?</li>
+		<input type="radio" name="r5" id="r5" value="10"/>IRON MAN<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>INFINITY WAR<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>AVENGERS<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>GUARDIANS OF THE GALAXY<br/>
+	</ul>
+	
+</div>
+<!--Está es una Función para calificar las respuestas seleccionadas-->
+<input type="button" value="Calificar" onclick="califica()">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
