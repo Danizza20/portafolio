@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="Cuestionario.css"/>
+    <link rel="icon" type="image/jpg" href="icono.jpg"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+</head>
+
+<script>
+    var total;
+    function califica()
+        {var total=0;
+            for (var x=1;x<=10;x++)
+            {
+            var res=0;
+            var nom="r"+x;
+            var resul=document.getElementsByName(nom);
+            for(var i=0;i<resul.length;i++) /*resul.length es para contar menor a la longitud del radio r=4*/
+            {
+                if(resul[i].checked==true)
+                    res=parseInt(resul[i].value); /*Cuenta si el "res" seleccionado y da el valor*/
+            }
+            total=total+res; /*Conrador para la suma del total*/
+            document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+            }
+            if(total>=30) /*Se evaluan los puntos obtenidos*/
+                document.getElementById("comentario").innerHTML="Tienes unos hábitos de vida bastante saludables. Trata de mantener una dieta equilibrada, realizar ejercicio físico, evitar el consumo de alcohol y no fumar";
+            else
+                if(tota==30)
+                document.getElementById("comentario").innerHTML="Puedes mejorar tus hábitos de vida y hacerlos más saludables.";
+             else
+                if(total<=20)
+                document.getElementById("comentario").innerHTML="Te aconsejamos que intentes cambiar tus hábitos de vida. Trata de mantener una dieta equilibrada, realizar ejercicio físico, dedicar tiempo al ocio, etc.";
+        }
+
+        function generar(){
+        //Crear un objeto o instancia jsPDF
+        var doc = new jsPDF();
+
+        //Definir el tamaño de la letra
+        doc.setFontSize(35);
+        //Color del texto
+        doc.setTextColor(62, 173, 14);
+        doc.text(20, 20, "Resultados del test");
+        doc.setTextColor(49, 151, 193); //Color en formato RGB
+        doc.setFontSize(25);
+        doc.text(20, 30, "“La primera riqueza es la salud”"); //Ubicación, Texto
+        doc.setTextColor(0,0,0);
+        doc.setFontSize(20);
+        doc.text(20, 50, "Si obtuviste más de 30 puntos. \r ¡Felicitaciones! Seguí así");
+        doc.text(20, 70, "Si obtuviste entre 30 a 20 puntos. \r ¡Puedes mejorar!");
+        doc.text(20, 90, "Si obtuviste menos de 20 puntos \r ¡Cuidado! Debes hacer cambios urgentes");
+
+var string = doc.output('datauristring');
+
+$('iframe').attr('src', string);
+}
+</script>
+
+<body>
+
+    <div class="header">
+        <h1>Connect Salud</h1>
+        <h3>“Mantener una buena salud debería ser el objetivo principal de todos nosotros”</h3>
+      </div>
+      
+      <div class="topnav">
+        <a href="Connect Salud.html">Inicio</a>
+        <a href="ConoceCS.html">Conoce a Connect Salud</a>
+        <a href="Preguntas.html">Preguntas frecuentes</a>
+        <a href="blog.html">Blog</a>
+        <a href="regristrarse.html">Registrate</a>
+        <a href="Cuestionario.html">Test</a>
+        <a href="galeria.html">Galería</a>     
+      </div>
+
+<div class="card">
+    <h2 align="center">Haz un test sobre hábitos saludables</h2>
+    <h6 align="center"><img src="habitos-saludables.jpg" width="500" height="300" alt="celular"></h6>
+    <p align="center">Conseguir hábitos de vida saludables a tu edad, en la que
+            ves muy lejanos los problemas de salud, es fundamental
+            para prevenir enfermedades. Evalúa tus hábitos saludables
+            y los de tus compañeros y compañeras con este test.</p>
+</div>
+
+<div class="card">
+    <form>
+            <ul>
+
+            <div>
+            <li>Pregunta 1: ¿Cuántas comidas haces al día?</li>
+            <input type="radio" name="r1" id="r1" value="4"/>Suelo hacer 3 comidas principales y dos tentempiés entre horas<br/>
+            <input type="radio" name="r1" id="r1" value="3"/>Suelo hacer 3 comidas principales y un tentempiés a media mañana
+            o media tarde<br/>
+            <input type="radio" name="r1" id="r1" value="1"/>Suelo hacer 3 comidas principales<br/>
+            </div>
+            
+            <div>
+            <li>Pregunta 2: ¿Desayunas antes de ir al colegio o al instituto?</li>
+            <input type="radio" name="r2" id="r2" value="1"/>No desayuno casi nunca<br/>
+            <input type="radio" name="r2" id="r2" value="2"/>Desayuno poco<br/>
+            <input type="radio" name="r2" id="r2" value="4"/>Hago un buen desayuno<br/>
+            </div>
+    
+            <div>
+            <li>Pregunta 3: ¿Cuántas raciones de fruta y verdura tomas al día?</li>
+            <input type="radio" name="r3" id="r3" value="1"/>Entre 0 y 1 raciones<br/>
+            <input type="radio" name="r3" id="r3" value="2"/>Entre 2 y 4 raciones<br/>
+            <input type="radio" name="r3" id="r3" value="4"/>5 o más raciones<br/>
+            </div>
+    
+            <div>
+            <li>Pregunta 4: ¿Cuántas veces a la semana comes bollería industrial/comida rápida/chucherías?</li>
+            <input type="radio" name="r4" id="r4" value="4"/> Nunca o casi nunca<br/>
+            <input type="radio" name="r4" id="r4" value="2"/>1-2 veces a la semana<br/>
+            <input type="radio" name="r4" id="r4" value="1"/>Más de 2 veces a la semana<br/>
+            </div>
+    
+            <div>
+            <li>Pregunta 5: ¿Cuánto caminas o corres al día?</li>
+            <input type="radio" name="r5" id="r5" value="1"/>Menos de 1 hora<br/>
+            <input type="radio" name="r5" id="r5" value="3"/>Entre 1 hora y 3 horas<br/>
+            <input type="radio" name="r5" id="r5" value="4"/>Más de 3 horas<br/>
+            </div>
+
+            <div>
+            <li>Pregunta 6: ¿Cuántas horas dedicas a hacer deporte a la semana?</li>
+            <input type="radio" name="r6" id="r6" value="1"/>Menos de 1 hora<br/>
+            <input type="radio" name="r6" id="r6" value="3"/>Entre 1 hora y 3 horas<br/>
+            <input type="radio" name="r6" id="r6" value="4"/>Más de 3 horas<br/>
+            </div>
+
+            <div>
+            <li>Pregunta 7: ¿Cuántas horas dedicas a realizar alguna actividad física que te distrae o relaja a la semana?</li>
+            <input type="radio" name="r7" id="r7" value="1"/>Menos de 1 hora<br/>
+            <input type="radio" name="r7" id="r7" value="3"/>Entre 1 hora y 3 horas<br/>
+            <input type="radio" name="r7" id="r7" value="4"/>Más de 3 horas<br/>
+            </div>
+
+            <div>
+            <li>Pregunta 8: ¿Cuántas veces te duchas a la semana?</li>
+            <input type="radio" name="r8" id="r8" value="1"/>Menos de 3 veces<br/>
+            <input type="radio" name="r8" id="r8" value="2"/>Entre 4 y 5 veces<br/>
+            <input type="radio" name="r8" id="r8" value="4"/>Todos los días<br/>
+            </div>
+
+            <div>
+            <li>Pregunta 9: ¿Cuántas horas duermes al día?</li>
+            <input type="radio" name="r9" id="r9" value="1"/>Entre 4 y 5 horas<br/>
+            <input type="radio" name="r9" id="r9" value="3"/>Entre 6 y 7 horas<br/>
+            <input type="radio" name="r9" id="r9" value="4"/>Entre 8 y 9 horas<br/>
+            </div>
+
+            <div>
+            <li>Pregunta 10: ¿Te haces al menos un chequeo médico (de control) por año?</li>
+            <input type="radio" name="r10" id="r10" value="4"/>Sí. Al menos una vez al año<br/>
+            <input type="radio" name="r10" id="r10" value="2"/>Me hago chequeos, pero pasa más de un año entre uno y otro<br/>
+            <input type="radio" name="r10" id="r10" value="1"/>No suelo realizarme chequeos. O solo lo hago cuando tengo algún problema de salud<br/>
+            </div>
+        </ul>
+</div>
+
+<input type="button" value="Calificar" onclick="califica()">
+<input type="button" onclick="generar()" value="Generar PDF"/><br/>
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
